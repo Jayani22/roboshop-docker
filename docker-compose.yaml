@@ -1,8 +1,8 @@
 services:
   catalogue:
     image: catalogue:v1
-    container _name: catalogue
-    depends _on: 
+    container_name: catalogue
+    depends_on: 
     - mongodb
   mongodb:
     image: mongodb:v1
