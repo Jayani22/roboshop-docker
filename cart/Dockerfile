@@ -15,9 +15,8 @@ EXPOSE 8080
 LABEL com.project="roboshop" \
       component="cart" \
       created_by="jayani"
-ENV MONGO="true" \
-    REDIS_HOST="redis" \
-    CATALOGUE_HOST="catalogue"
+ENV REDIS_HOST="redis" \
+    CATALOGUE_HOST="catalogue" \
     CATALOGUE_PORT="8080"
 COPY --from=build -chown=roboshop:roboshop /opt/server /opt/server
 USER roboshop
